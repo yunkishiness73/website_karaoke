@@ -1,0 +1,11 @@
+DELIMITER $$
+CREATE TRIGGER after_update_hoadon AFTER UPDATE ON chitiethoadon
+FOR EACH ROW
+BEGIN
+	DECLARE dongia double;
+    @dongia = (SELECT thucdon.giatien WHERE thucdon.mathucdon = )
+END $$
+DELIMITER ; 
+
+-- update phong set trangthai = '1' where maphong = '$maphong';
+-- insert into hoadon(maphong) values ($maphong);

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../../js/jquery.timepicker.min.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="../../js/jquery.timepicker.min.js"></script>
+
+	<script>
+		$(function() {
+
+			$('.press').click(function(){
+			  tgian = $('.time').val();
+			  ngay = $('.date').val();
+			  datetime = ngay + " " + tgian;
+			  console.log(datetime);
+			});
+
+
+		});
+
+
+	</script>
+
+</head>
+<body>
+	<label>Nhập thời gian</label>
+	<input type="time" class="time"> <br>
+	<label>Nhập ngày</label> <input type="date" class="date"> <br>
+	<button class="press">Nhấn</button>
+</body>
+</html>

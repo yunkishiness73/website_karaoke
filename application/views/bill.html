@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+		$(function(){
+			$(".datepicker").datepicker({ 
+				dateFormat: "mm-dd-yy", 
+				onSelect: function(){
+					var selected = $(this).val();
+					alert(selected);
+				}
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<input type="text" class="datepicker"> <button class="btn-datapicker"><i class="fa fa-calendar" style="color: lightblue;"></i></button>
+</body>
+</html>

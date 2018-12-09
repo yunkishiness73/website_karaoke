@@ -1,0 +1,5 @@
+BEGIN
+	DECLARE giatien double;
+	SET @giatien = (SELECT giatien FROM thucdon WHERE thucdon.mathucdon = NEW.mathucdon);
+    INSERT INTO chitiethoadon VALUES(NEW.mahoadon, NEW.mathucdon, NEW.soluong, NEW.soluong * @giatien);
+END
